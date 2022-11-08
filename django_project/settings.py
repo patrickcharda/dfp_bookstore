@@ -172,6 +172,7 @@ AUTHENTICATION_BACKENDS = (
     "allauth.account.auth_backends.AuthenticationBackend",
 )
 # EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST EMAIL_HOST_USER EMAIL_HOST_PASSWORD EMAIL_PORT EMAIL_USE_TLS
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"  # console instead smtp, while it is not proprely configured
 ACCOUNT_SESSION_REMEMBER = True  # supprimer cette ligne si on veut que l'utilisateur voit une case à cocher "remember me"
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
@@ -179,5 +180,4 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = "email"
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
-
 DEFAULT_FROM_EMAIL = "admin@djangobookstore.com"
