@@ -1,4 +1,4 @@
-# from django.shortcuts import render
+# could be remove in chapter 8, django-allauth
 from django.urls import reverse_lazy
 from django.views import generic
 

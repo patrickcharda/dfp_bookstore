@@ -1,5 +1,6 @@
-import imp
 from django.contrib import admin
+from django.contrib.auth.decorators import login_required
+
 from django.contrib.auth import get_user_model
 from django.contrib.auth.admin import UserAdmin
 
@@ -20,3 +21,4 @@ class CustomUserAdmin(UserAdmin):
 
 
 admin.site.register(CustomUser, CustomUserAdmin)
+admin.site.login = login_required(admin.site.login)
